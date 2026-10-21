@@ -1,0 +1,12 @@
+[build]
+  publish = "public"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# pdf.js is loaded as a JavaScript module, so .mjs files must be served as JavaScript
+[[headers]]
+  for = "/vendor/*.mjs"
+  [headers.values]
+    Content-Type = "text/javascript; charset=utf-8"

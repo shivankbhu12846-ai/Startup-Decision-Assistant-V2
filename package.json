@@ -1,0 +1,8 @@
+{
+  "name": "startup-investment-decision-tool",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Nine-step startup investment decision tool (Netlify site + AI function)",
+  "scripts": { "test": "node tests/model.test.mjs && node tests/v2.test.mjs" }
+}

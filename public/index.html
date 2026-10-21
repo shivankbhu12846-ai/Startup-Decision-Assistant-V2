@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--PREVIEW-START-->
+<title>Startup Investment Decision Tool</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Guides each startup pitch through nine steps: fund rules, AI extraction, analyst verification, screening, analysis, AI challenge, committee decision and monitoring.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/app.css">
+<!--PREVIEW-HEAD-END-->
+</head>
+<body>
+<!--PREVIEW-BODY-START-->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-eyebrow">AI-driven decision making · group pilot</span>
+      <span class="brand-name">Startup investment decision tool</span>
+    </div>
+    <div class="topbar-controls">
+      <label class="case-picker" for="case-select">
+        <span class="label-mono">Case</span>
+        <select id="case-select" aria-label="Choose a case"></select>
+      </label>
+      <button type="button" class="btn btn-ghost" id="new-case">New case</button>
+      <span class="ai-chip" id="ai-chip" title="AI connection status">Checking AI…</span>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <nav class="rail" aria-label="Workflow steps">
+    <ol class="steps" id="steps"></ol>
+    <div class="rail-group"><span class="label-mono rail-label">Tools</span><ol class="steps" id="tools"></ol></div>
+    <div class="legend" aria-label="Who does what">
+      <span class="tag tag-human">Human</span>
+      <span class="tag tag-ai">AI</span>
+      <span class="tag tag-code">Code</span>
+      <span class="tag tag-data">System</span>
+    </div>
+  </nav>
+  <main class="main" id="main" tabindex="-1"></main>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script type="module" src="js/app.js"></script>
+<!--PREVIEW-BODY-END-->
+</body>
+</html>
